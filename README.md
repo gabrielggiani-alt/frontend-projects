@@ -26,6 +26,9 @@ Responsive reinterpretation of pudim.com.br, a landmark of the Brazilian web —
 ### [Interactive DOM Page](dom-interativo/)
 Page built around DOM manipulation: click counter with a floor at zero, paragraphs created from keyboard input, live character count that ignores spaces, and generated ordered or unordered lists.
 
+### [Arena Games — Gaming Store](arena-games/)
+Simulated gaming e-commerce: product catalog rendered from JavaScript objects, category filter and name search, a shopping cart with quantity control, stock limits and automatic discount, and a simulated checkout — organized around `Produto` and `Carrinho` classes.
+
 ---
 
 Each project is fully static — open its `index.html` in the browser to view.
