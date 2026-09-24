@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Arena Games</h1>
+            <div class="busca-container">
+                <input type="text" id="campo-busca" placeholder="Buscar produtos...">
+            </div>
+            <button id="btn-carrinho" class="btn-carrinho">
+                🛒 Carrinho
+                <span id="carrinho-contador">0</span>
+            </button>
+        </div>
+        <p class="descricao-loja">Seu setup gamer começa aqui. Periféricos, consoles e acessórios com os melhores preços.</p>
+    </header>
+
+    <main>
+        <section id="secao-produtos">
+            <div id="categorias-container" class="categorias"></div>
+            <div id="produtos-container" class="produtos-grid"></div>
+        </section>
+
+        <section id="secao-carrinho" style="display: none;">
+            <div class="carrinho-header">
+                <button id="btn-voltar" class="btn-voltar">← Voltar às compras</button>
+                <h2>Seu Carrinho</h2>
+            </div>
+            <div id="carrinho-itens"></div>
+            <div id="carrinho-resumo" class="carrinho-resumo" style="display: none;">
+                <p id="desconto-info" class="desconto-info"></p>
+                <div class="resumo-linha">
+                    <span>Quantidade de itens:</span>
+                    <span id="resumo-qtd"></span>
+                </div>
+                <div class="resumo-linha">
+                    <span>Subtotal:</span>
+                    <span id="resumo-subtotal"></span>
+                </div>
+                <div class="resumo-linha">
+                    <span>Desconto:</span>
+                    <span id="resumo-desconto"></span>
+                </div>
+                <div class="resumo-linha total">
+                    <span>Total:</span>
+                    <span id="resumo-total"></span>
+                </div>
+                <button id="btn-finalizar" class="btn-finalizar">Finalizar Compra</button>
+            </div>
+        </section>
+
+        <section id="secao-resumo-final" style="display: none;">
+            <h2>Resumo do Pedido</h2>
+            <div id="resumo-final-itens"></div>
+            <div class="resumo-totais">
+                <div class="resumo-linha">
+                    <span>Subtotal:</span>
+                    <span id="final-subtotal"></span>
+                </div>
+                <div class="resumo-linha">
+                    <span>Desconto:</span>
+                    <span id="final-desconto"></span>
+                </div>
+                <div class="resumo-linha total">
+                    <span>Total:</span>
+                    <span id="final-total"></span>
+                </div>
+            </div>
+            <div class="botoes-final">
+                <button id="btn-confirmar" class="btn-confirmar">Confirmar Compra</button>
+                <button id="btn-cancelar" class="btn-cancelar">Voltar ao Carrinho</button>
+            </div>
+        </section>
+
+        <section id="secao-compra-sucesso" class="sucesso" style="display: none;">
+            <div class="sucesso-conteudo">
+                <span class="sucesso-icone">✅</span>
+                <h2>Compra realizada com sucesso!</h2>
+                <p>Obrigado por comprar na Arena Games.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="notificacao" class="notificacao"></div>
+
+    <footer>
+        <p>Arena Games &copy; 2026 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
